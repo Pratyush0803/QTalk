@@ -1,0 +1,90 @@
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipeRefreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <!-- Back Button -->
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="40dp"
+            android:layout_height="39dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/back_button" />
+
+        <!-- Top Illustration Image -->
+        <ImageView
+            android:id="@+id/top_illustration"
+            android:layout_width="match_parent"
+            android:layout_height="309dp"
+            android:layout_below="@id/back_button"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="-84dp"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="Illustration"
+            android:src="@drawable/social_media_users__1_" />
+
+        <!-- Add Friend Input (Enter UID) -->
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/uid_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/top_illustration"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="47dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="1dp"
+            android:layout_toStartOf="@id/search_button"
+            android:background="@drawable/bubble_background"
+            android:hint="Add Friend"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <!-- Search Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/top_illustration"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="21dp"
+            android:background="@drawable/button_background"
+            android:text="Search"
+            android:textColor="#FFFFFF" />
+
+        <!-- Requests Title -->
+        <TextView
+            android:id="@+id/requests_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/uid_input"
+            android:layout_marginTop="8dp"
+            android:layout_centerHorizontal="true"
+            android:text="Requests"
+            android:textColor="#6A1B9A"
+            android:textSize="18sp" />
+
+        <!-- Friend Requests List -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/friend_requests_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/requests_title"
+            android:layout_marginTop="8dp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

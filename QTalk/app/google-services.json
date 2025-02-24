@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "666477754323",
+    "firebase_url": "https://qtalk-d8cb9-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "qtalk-d8cb9",
+    "storage_bucket": "qtalk-d8cb9.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:666477754323:android:77372fd839ae4b2437a126",
+        "android_client_info": {
+          "package_name": "com.pj.qtalk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "666477754323-44uvj23r75m9soran6ue6b9j74dsdtdp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pj.qtalk",
+            "certificate_hash": "7af6cffadd9e79b5a8853db1271cea5a223b2629"
+          }
+        },
+        {
+          "client_id": "666477754323-n4m07hnnfv8ssesgskrm2ipiq6sa1p46.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD362iCYSGQTs2c6He2SLGSCK7mHYK2CLY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "666477754323-n4m07hnnfv8ssesgskrm2ipiq6sa1p46.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

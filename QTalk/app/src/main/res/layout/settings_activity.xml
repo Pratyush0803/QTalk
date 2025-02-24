@@ -1,0 +1,117 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/edit_text_background"
+    android:padding="16dp">
+
+    <!-- Profile Picture -->
+    <TextView
+        android:id="@+id/profileInitial"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/circle_background"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- User Name with Edit Option -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Name"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginEnd="8dp" />
+
+        <TextView
+            android:id="@+id/editName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:padding="4dp"
+            android:text="Edit"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="14sp"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <!-- Edit Name Field (Initially hidden) -->
+    <EditText
+        android:id="@+id/editNameField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter new name"
+        android:visibility="gone"
+        android:layout_marginTop="16dp" />
+
+    <!-- Save Button to Update Name -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/saveNameButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background"
+        android:text="Save"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        android:layout_marginTop="16dp" />
+
+    <!-- User UID with Copy Option -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="24dp">
+
+        <TextView
+            android:id="@+id/userUID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UID: 123456789"
+            android:textSize="14sp"
+            android:textColor="#666666"
+            android:layout_marginEnd="8dp" />
+
+        <TextView
+            android:id="@+id/copyUID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:padding="4dp"
+            android:text="Copy"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="14sp"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <!-- Spacer to push the logout button down -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!-- Logout Button -->
+    <TextView
+        android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:drawableLeft="@drawable/log_out"
+        android:drawablePadding="10dp"
+        android:padding="12dp"
+        android:text="Log Out"
+        android:textSize="16sp" />
+</LinearLayout>

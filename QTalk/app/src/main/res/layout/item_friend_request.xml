@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="@drawable/border_shape"
+    android:orientation="horizontal">
+
+    <!-- Profile Picture Placeholder -->
+    <TextView
+        android:id="@+id/profile_picture"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/circle_background"
+        android:gravity="center"
+        android:text="P"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:layout_marginEnd="16dp" /> <!-- Added margin to separate from text -->
+
+    <!-- Username and Age Texts -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/request_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User's Name"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/request_age_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp" /> <!-- Margin to separate from name -->
+    </LinearLayout>
+
+    <!-- Accept Button -->
+    <ImageView
+        android:id="@+id/accept_button"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="18dp"
+        android:src="@drawable/accept"
+        android:contentDescription="@string/accept_friend_request" />
+
+    <!-- Reject Button -->
+    <ImageView
+        android:id="@+id/reject_button"
+        android:layout_width="36dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/reject"
+        android:contentDescription="@string/reject_friend_request" />
+</LinearLayout>

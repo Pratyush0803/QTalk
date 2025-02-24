@@ -1,0 +1,60 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="#FFFFFF">
+
+    <!-- Illustration at the top -->
+
+    <!-- Name input field -->
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/illustration"
+        android:layout_width="match_parent"
+        android:layout_height="373dp"
+        android:layout_marginBottom="32dp"
+        android:contentDescription="Illustration of two people"
+        android:src="@drawable/dayflow_two" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/nameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="Name"
+        android:textColor="@color/black"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:padding="10dp" />
+
+    <!-- Age input field with minimum age restriction of 13 -->
+    <EditText
+        android:id="@+id/ageEditText"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="Age"
+        android:inputType="number"
+        android:maxLength="2"
+        android:textColor="@color/black"
+        android:minHeight="48dp"
+        android:padding="10dp" />
+
+    <!-- Continue button -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/continueButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginHorizontal="24dp"
+        android:background="@drawable/button_background"
+        android:text="Continue"
+        android:backgroundTint="#800080"
+        android:textColor="#FFFFFF"/>
+
+</LinearLayout>
